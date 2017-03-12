@@ -8,7 +8,7 @@ import requests
 app = Flask(__name__)
 
 # Tokens from the facebook page web hooks
-ACCESS_TOKEN = "EAAUzNdZCxv8oBAMNkk15UhxLkDjP5nCsbizuBDUDWl2pkAxwhAUZAktOXwdyWZAZBy1jsZAPb2DFRI7iI10Ozm5BzHXYaW94JG2CRoZBPoU3dHOtb0XF2KRmiWQpDmq0AGcFazVPFAytST3uVQKwmDfCYfe7m8dKN87a35kbdwegZDZD"
+ACCESS_TOKEN = "EAAUzNdZCxv8oBAD8qIaw2j1kfSsGgEXmpPimxMUDgeV5mp8gHyMMss6lcY1ZBbrdz1KZB5OYeZBNuflZAzgtT1vVvjzpRBZC37sitmXvojpIHXBTSTHaYM0JbuuTZAhLSfXHLZAn6b9m804eHTBpNY5u4njXoTcjtBdZCjYOxMLrvDgZDZD"
 VERIFY_TOKEN = "secret"
 
 # method to reply to a message from the sender
