@@ -8,8 +8,8 @@ import requests
 app = Flask(__name__)
 
 # Tokens from the facebook page web hooks
-ACCESS_TOKEN = "EAAUzNdZCxv8oBAD8qIaw2j1kfSsGgEXmpPimxMUDgeV5mp8gHyMMss6lcY1ZBbrdz1KZB5OYeZBNuflZAzgtT1vVvjzpRBZC37sitmXvojpIHXBTSTHaYM0JbuuTZAhLSfXHLZAn6b9m804eHTBpNY5u4njXoTcjtBdZCjYOxMLrvDgZDZD"
-VERIFY_TOKEN = "secret"
+ACCESS_TOKEN = "YOUR-TOKEN-HERE"
+VERIFY_TOKEN = "YOUR-SECRET-HERE"
 
 # method to reply to a message from the sender
 def reply(user_id, msg):
@@ -17,6 +17,7 @@ def reply(user_id, msg):
         "recipient": {"id": user_id},
         "message": {"text": msg}
     }
+    # Post request using the Facebook Graph API v2.6
     resp = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=" + ACCESS_TOKEN, json=data)
     print(resp.content)
 
@@ -38,6 +39,6 @@ def handle_incoming_messages():
 
     return "ok"
 
-
+# Run the application.
 if __name__ == '__main__':
     app.run(debug=True)
