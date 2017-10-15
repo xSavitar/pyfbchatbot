@@ -4,15 +4,12 @@ from flask import Flask, request
 # Import request
 import requests
 
-# create a flask app instance
+# create a Flask app instance
 app = Flask(__name__)
 
-# Tokens from the facebook page web hooks
-# ACCESS_TOKEN = "YOUR-TOKEN-HERE"
-# VERIFY_TOKEN = "YOUR-SECRET-HERE"
-
-ACCESS_TOKEN = "EAAKih2v7lmkBAGBl3BOR7YqkTAmWgZCmbzJiAde2bhXmzwZCopcHujHZBtXovtcvIY91PnbGKav5GwYg0g9ShDFojZBbW96psgbC544KYPZBVZCMUhA73UWIRdUZBL4JcbASmGi1jTbuZBMZBFsWQUBE3mpX0HZBL6ZCQMQLKPJT7CcdNoVZC41gSIzk"
-VERIFY_TOKEN = "secret"
+# Tokens from the Facebook page web hooks
+ACCESS_TOKEN = "YOUR-TOKEN-HERE"
+VERIFY_TOKEN = "YOUR-SECRET-HERE"
 
 # method to reply to a message from the sender
 def reply(user_id, msg):
