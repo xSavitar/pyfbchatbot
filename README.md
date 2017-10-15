@@ -1,15 +1,16 @@
-## Facebook Messenger Chat for Starters
+## Facebook Messenger Chat Bot for Starters
 
 
 #### Install Dependencies
 
-Install Flask & requests packages using `pip`:
+Install `Flask` & `requests` packages using Python's dependency package manager(`pip`);
 
-```
+```shell 
 pip install Flask requests
 ```
 
-Install ngrok from - <a href="https://ngrok.com/">https://ngrok.com/</a>.
+Download and Install ngrok from the [Official Ngrok Website](https://ngrok.com/).
+
 
 
 
@@ -17,13 +18,13 @@ Install ngrok from - <a href="https://ngrok.com/">https://ngrok.com/</a>.
 
 Run the dev server using: 
 
-```
+```shell 
 python server.py
 ```
 
 Use `ngrok` to tunnel the connection; 
 
-```
+```shell 
 ./ngrok http 5000
 ```
 
@@ -32,7 +33,7 @@ You will see the url for your local server. Something like: `https://6cecffb8.ng
 
 
 
-#### Setup Facebook App & Access Token (snapshots coming soon!)
+#### Setup Facebook App & Access Token;
 
 * Create a Facebook App from [Facebook Developer Website](https://developers.facebook.com/).
 ![alt text](assets/create-app.png)
